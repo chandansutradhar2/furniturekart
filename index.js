@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
 	res.send("Hello World!");
 });
 
+app.post("/signup", (req, res) => {
+	res.send("signup success");
+});
+
 app.post("/login", (req, res) => {
 	//todo connect to db and validate user
 	const email = req.body.email;
