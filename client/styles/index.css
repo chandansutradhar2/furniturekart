@@ -1,0 +1,40 @@
+#container {
+	width: 100%;
+	display: flex;
+	row-gap: 0.4rem;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.btn-grad {
+	background-image: linear-gradient(
+		to right,
+		#d31027 0%,
+		#ea384d 51%,
+		#d31027 100%
+	);
+}
+.btn-grad {
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+}
+
+.btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.errormsg {
+	color: red;
+	font-size: small;
+}
