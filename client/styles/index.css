@@ -1,5 +1,6 @@
 #container {
-	width: 100%;
+	width: 70%;
+	margin: 1rem;
 	display: flex;
 	row-gap: 0.4rem;
 	justify-content: center;

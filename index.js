@@ -8,8 +8,21 @@ app.get("/", (req, res) => {
 });
 
 app.post("/signup", (req, res) => {
-	res.send("signup success");
+	//accept email,password,firstName,lastName, mobileNo
+	const email = req.body.email;
+	const password = req.body.password;
+	const firstName = req.body.firstName; // not a good practice , v1,v2,v3 doesnt provide context of the data
+	//which it stores.
+
+	if (email !== null || email !== undefined) {
+	} else if (password !== null || password !== undefined) {
+	}
 });
+
+function add(firstNoToAdd, secondNoToAdd) {
+	let sumValue = firstNoToAdd + secondNoToAdd;
+	return sumValue;
+}
 
 app.post("/login", (req, res) => {
 	//todo connect to db and validate user

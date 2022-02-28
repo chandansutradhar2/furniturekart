@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FurnitureKart</title>
     <link rel="stylesheet" href="../styles/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <script src="./index.js"></script>
 </head>
 
@@ -18,12 +21,30 @@
         Login
     </h2>
     <div id="container">
-        <input placeholder="Enter Email" type="text" id="email" />
-        <span id="email-error" class="errormsg"></span>
-        <input type="password" id="password" placeholder="Enter password" />
-        <span id="password-error" class="errormsg"></span>
-        <button class="btn-grad" onclick="onBtnClicked()">Login</button>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="email-input">@</span>
+            <input type="text" id="email" class="form-control" placeholder="Email" aria-label="Username"
+                aria-describedby="basic-addon1">
+            <span id="email-error" class="errormsg"></span>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="password-input">P</span>
+            <input type="password" id="password" class="form-control" placeholder="Password" aria-label="Username"
+                aria-describedby="basic-addon1">
+            <span id="password-error" class="errormsg"></span>
+        </div>
+
+        <div class="input-group mb-3">
+            <button class="btn btn-danger">Login</button>
+        </div>
+
+
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
